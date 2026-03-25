@@ -1,6 +1,7 @@
 body {
   background-color: #e6cfa7;
   font-family: Arial, sans-serif;
+  margin-top: 60px;
 }
 
 .app-container {
@@ -23,7 +24,7 @@ body {
 }
 
 .text-center {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .name-title {
