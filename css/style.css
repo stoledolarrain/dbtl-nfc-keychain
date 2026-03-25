@@ -84,39 +84,32 @@ body {
   font-weight: normal;
 }
 
-/* =========================================
-   ANIMACIONES DE ENTRADA
-   ========================================= */
+/* Animaciones */
 
-/* 1. Definimos la animación paso a paso (como un guion de cine) */
 @keyframes aparecerYSubir {
   from {
-    opacity: 0; /* Empieza totalmente transparente (invisible) */
-    transform: translateY(40px); /* Empieza 40 píxeles más abajo de su lugar original */
+    opacity: 0;
+    transform: translateY(40px);
   }
   to {
-    opacity: 1; /* Termina totalmente visible */
-    transform: translateY(0); /* Termina en su posición exacta original */
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-/* 2. Clase principal para activar la animación */
 .animar-entrada {
-  /* opacity: 0 asegura que no se vean antes de que empiece la animación */
   opacity: 0; 
-  /* Aplicamos la animación: nombre, duración (0.8 segundos), ritmo suave, y que se quede en el estado final (forwards) */
   animation: aparecerYSubir 0.8s ease-out forwards; 
 }
 
-/* 3. Clases de retraso (Delay) para crear el efecto "cascada" */
 .retraso-1 {
-  animation-delay: 0.2s; /* Espera un poquito antes de animarse */
+  animation-delay: 0.2s;
 }
 
 .retraso-2 {
-  animation-delay: 0.5s; /* Espera medio segundo */
+  animation-delay: 0.5s;
 }
 
 .retraso-3 {
-  animation-delay: 0.8s; /* Espera casi un segundo */
+  animation-delay: 0.8s;
 }
