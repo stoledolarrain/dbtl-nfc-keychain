@@ -1,0 +1,122 @@
+body {
+  background-color: #e6cfa7;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  max-width: 420px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.bg-pattern {
+  width: 100%;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-top: -430px;
+}
+
+.profile-pic {
+  width: 280px;
+  margin-top: -306px;
+  position: relative;
+}
+
+.text-center {
+  margin-top: 40px;
+}
+
+.name-title {
+  font-size: 2rem;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-top: -20px;
+}
+.job-title {
+  font-size: 1.4rem;
+  color: #344c40;
+  line-height: 1.1;
+  margin-top: -10px;
+}
+.custom-card {
+  background-color: #344c40;
+  border-radius: 20px;
+  margin-top: -10px;
+}
+
+.card-message {
+  color: #e6cfa7;
+  line-height: 1.4;
+}
+
+.btn-contact {
+  background-color: transparent;
+  color: #e6cfa7;
+  border: 1px solid #e6cfa7;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.btn-contact:hover,
+.btn-contact:active {
+  background-color: #e6cfa7;
+  color: #344c40;
+}
+
+.icon-action {
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon-action:hover,
+.icon-action:active {
+  transform: scale(1.1);
+}
+
+.contact-icon {
+  width: 75px;
+  height: auto;
+}
+
+.icon-text {
+  color: #e6cfa7;
+  font-size: 0.85rem;
+  font-weight: normal;
+}
+
+/* =========================================
+   ANIMACIONES DE ENTRADA
+   ========================================= */
+
+/* 1. Definimos la animación paso a paso (como un guion de cine) */
+@keyframes aparecerYSubir {
+  from {
+    opacity: 0; /* Empieza totalmente transparente (invisible) */
+    transform: translateY(40px); /* Empieza 40 píxeles más abajo de su lugar original */
+  }
+  to {
+    opacity: 1; /* Termina totalmente visible */
+    transform: translateY(0); /* Termina en su posición exacta original */
+  }
+}
+
+/* 2. Clase principal para activar la animación */
+.animar-entrada {
+  /* opacity: 0 asegura que no se vean antes de que empiece la animación */
+  opacity: 0; 
+  /* Aplicamos la animación: nombre, duración (0.8 segundos), ritmo suave, y que se quede en el estado final (forwards) */
+  animation: aparecerYSubir 0.8s ease-out forwards; 
+}
+
+/* 3. Clases de retraso (Delay) para crear el efecto "cascada" */
+.retraso-1 {
+  animation-delay: 0.2s; /* Espera un poquito antes de animarse */
+}
+
+.retraso-2 {
+  animation-delay: 0.5s; /* Espera medio segundo */
+}
+
+.retraso-3 {
+  animation-delay: 0.8s; /* Espera casi un segundo */
+}
